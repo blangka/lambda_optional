@@ -46,10 +46,15 @@ public class RefactoringTest {
     @Test
     public void 리팩토링_DSL샘플() throws Exception {
 
+        // set 으로 추가하는 경우
         plain();
+        // 메서드 체인 한대의 메서드 호출체인으로 정의한다.
         methodChaining();
+        // 중첩된 함수 이용: 다른 함수 안에 함수를 이용해 도메인 모델을 만든다.
         nestedFunction();
+        // 람다를 이용한 삼수 시퀀싱
         lambda();
+        // 여러 조합의 패턴들을 사용해서 만든 것
         mixed();
     }
 
